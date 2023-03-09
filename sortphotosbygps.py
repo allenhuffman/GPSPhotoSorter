@@ -1,3 +1,9 @@
+#
+# GPS Photo Sorter
+# Created (mostly) by chat.chatgpt.com
+# With updates to make it actually work by Allen C. Huffman
+# www.subethasoftware.com
+#
 import os
 import shutil
 import xml.etree.ElementTree as ET
