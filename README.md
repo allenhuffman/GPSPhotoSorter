@@ -12,6 +12,7 @@ I asked ChatGPT to describe what the script does:
 >
 >Overall, this script provides a useful tool for organizing photos based on their GPS coordinates and the user's desired organization scheme.
 
+## Usage ##
 ```
 usage: sortphotosbygps.py [-h] [--kml KML] [--input INPUT] [--output OUTPUT] [--nogpsdir NOGPSDIR]
 
@@ -25,3 +26,5 @@ optional arguments:
   --nogpsdir NOGPSDIR  Path to directory where photos without GPS data be moved (default: photos_no_gps)
   ```
   
+## Generate the KML file using Google Maps ##
+TBA
