@@ -14,16 +14,22 @@ I asked ChatGPT to describe what the script does:
 
 ## Usage ##
 ```
-usage: sortphotosbygps.py [-h] [--kml KML] [--input INPUT] [--output OUTPUT] [--nogpsdir NOGPSDIR]
+usage: sortphotosbygps.py [-h] [--kml KML] [--input INPUT] [--output OUTPUT]
+                          [--nogpsdir NOGPSDIR]
 
-Sort photos based on GPS data.
+Sort photos in to directories based on GPS data.
 
 optional arguments:
   -h, --help           show this help message and exit
-  --kml KML            Path to KML file containing GPS areas (default: GPS Areas.kml)
+  --kml KML            Path to KML file containing GPS areas (default: GPS
+                       Areas.kml)
   --input INPUT        Path to directory containing photos (default: photos)
-  --output OUTPUT      Path to directory where sorted photos will be moved (default: sorted_photos)
-  --nogpsdir NOGPSDIR  Path to directory where photos without GPS data be moved (default: photos_no_gps)
+  --output OUTPUT      Path to directory where sorted photos will be moved
+                       (default: sorted_photos)
+  --nogpsdir NOGPSDIR  Path to directory where photos without GPS data be
+                       moved (default: photos_no_gps)
+
+https://github.com/allenhuffman/GPSPhotoSorter
   ```
   
 ## Generate the KML file using Google Maps ##
