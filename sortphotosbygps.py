@@ -14,6 +14,7 @@
 # 2023-03-09 0.01 allenh - Project began.
 # 2023-03-10 0.02 allenh - Added command line options and more output.
 # 2023-03-11 0.03 allenh - More comments and better output.
+#            0.04 allenh - Ignore files starting with ".".
 #
 # TODO:
 #
@@ -79,7 +80,7 @@ for pm in root.iter('{http://www.opengis.net/kml/2.2}Placemark'):
 
 # Loop through each photo and move it to the appropriate folder.
 for filename in os.listdir(args.input):
-    if filename.endswith('.jpg'):
+    if filename.endswith('.jpg') and not filename.startswith('.'):
         with open(os.path.join(args.input, filename), 'rb') as f:
             tags = exifread.process_file(f)
             # for tag in tags.keys():
